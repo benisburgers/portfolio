@@ -1,0 +1,221 @@
+
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-auto-rows: 16vh;
+    font-family: monospace;
+    height: 100%;
+  }
+
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .outerDiv {
+    padding-right: 10px;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align:right;
+    white-space: nowrap;
+    overflow: hidden;
+    border-left:10px solid transparent;
+    background-color: #FE4A49;
+  }
+
+  .innerDiv {
+    float:right;
+  }
+
+  .displayText {
+    font-size: 10vh;
+    color: #F4F4F8;
+    }
+
+  .cancel {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .del {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .divide {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 2;
+    grid-row-end: 3;
+  }
+
+  .multiply {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .minus {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .plus {
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 5;
+    grid-row-end: 7;
+  }
+
+  .seven {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .eight {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .nine {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .four {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .five {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .six {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  }
+
+  .one {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .two {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .three {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+  .decimal {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+
+  .zero {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+
+  .equal {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 6;
+    grid-row-end: 7;
+  }
+
+  .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: thin black solid;
+    font-size: 6vh;
+  }
+
+  .special {
+    background-color: #FED766;
+  }
+
+  .operation {
+    background-color: #E6E6EA;
+  }
+
+  .number {
+    background-color: #009FB7;
+  }
+
+  .module-button {
+    background-color: inherit;
+    font: inherit;
+    border: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  .module-button:focus {outline:0;}
+
+  .module-button:hover {
+    filter:brightness(1.5);
+  }
+
+  .module-button:active {
+    filter:brightness(1);
+  }
+
+  /* Extra small devices (phones, 576px and down) */
+  @media only screen and (max-width: 576px) {
+  }
+
+  /* Small devices (landscape phones) */
+  @media only screen and (min-width: 576px) {
+    .displayText {
+      font-size: 12vh;
+    }
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .container {
+      max-width: 768px;
+    }
+  }

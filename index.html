@@ -234,39 +234,41 @@
               <h2 class="text-secondary text-uppercase mb-0">Calculator</h2>
               <hr class="star-dark mb-5">
               <div class="container mb-3">
-                <div class="wrapper">
+                <div class="calculator">
+                  <div class="wrapper">
 
-                  <div class="outerDiv" id="outerDiv">
-                    <div class="innerDiv" id="innerDiv">
-                      <span class="displayText" id="displayText">
-                      </span>
+                    <div class="outerDiv" id="outerDiv">
+                      <div class="innerDiv" id="innerDiv">
+                        <span class="displayText" id="displayText">
+                        </span>
+                      </div>
                     </div>
+
+                    <div class="cancel button special"><button class="module-button" onclick="cancel()">CANCEL</button></div>
+                    <div class="del button special"><button class="module-button" onclick="del()">DEL</button></div>
+
+                    <div class="plus button operation"><button class="module-button" onclick="clickOperationButton('+','+')">+</button></div>
+                    <div class="minus button operation"><button class="module-button" onclick="clickOperationButton('-','-')">-</button></div>
+                    <div class="multiply button operation"><button class="module-button" onclick="clickOperationButton('*','×')">×</button></div>
+                    <div class="divide button operation"><button class="module-button" onclick="clickOperationButton('/','÷')">÷</button></div>
+
+
+                    <div class="seven button number"><button class="module-button" onclick="clickNumberButton(7)">7</button></div>
+                    <div class="eight button number"><button class="module-button" onclick="clickNumberButton(8)">8</button></div>
+                    <div class="nine button number"><button class="module-button" onclick="clickNumberButton(9)">9</button></div>
+
+                    <div class="four button number"><button class="module-button" onclick="clickNumberButton(4)">4</button></div>
+                    <div class="five button number"><button class="module-button" onclick="clickNumberButton(5)">5</button></div>
+                    <div class="six button number"><button class="module-button" onclick="clickNumberButton(6)">6</button></div>
+
+                    <div class="one button number"><button class="module-button" onclick="clickNumberButton(1)">1</button></div>
+                    <div class="two button number"><button class="module-button" onclick="clickNumberButton(2)">2</button></div>
+                    <div class="three button number"><button class="module-button" onclick="clickNumberButton(3)">3</button></div>
+
+                    <div class="decimal button number"><button class="module-button" onclick="clickNumberButton('.')">.</button></div>
+                    <div class="zero button number"><button class="module-button" onclick="clickNumberButton(0)">0</button></div>
+                    <div class="equal button number"><button class="module-button" onclick="equate()">=</button></div>
                   </div>
-
-                  <div class="cancel button special"><button class="module-button" onclick="cancel()">CANCEL</button></div>
-                  <div class="del button special"><button class="module-button" onclick="del()">DEL</button></div>
-
-                  <div class="plus button operation"><button class="module-button" onclick="clickOperationButton('+','+')">+</button></div>
-                  <div class="minus button operation"><button class="module-button" onclick="clickOperationButton('-','-')">-</button></div>
-                  <div class="multiply button operation"><button class="module-button" onclick="clickOperationButton('*','×')">×</button></div>
-                  <div class="divide button operation"><button class="module-button" onclick="clickOperationButton('/','÷')">÷</button></div>
-
-
-                  <div class="seven button number"><button class="module-button" onclick="clickNumberButton(7)">7</button></div>
-                  <div class="eight button number"><button class="module-button" onclick="clickNumberButton(8)">8</button></div>
-                  <div class="nine button number"><button class="module-button" onclick="clickNumberButton(9)">9</button></div>
-
-                  <div class="four button number"><button class="module-button" onclick="clickNumberButton(4)">4</button></div>
-                  <div class="five button number"><button class="module-button" onclick="clickNumberButton(5)">5</button></div>
-                  <div class="six button number"><button class="module-button" onclick="clickNumberButton(6)">6</button></div>
-
-                  <div class="one button number"><button class="module-button" onclick="clickNumberButton(1)">1</button></div>
-                  <div class="two button number"><button class="module-button" onclick="clickNumberButton(2)">2</button></div>
-                  <div class="three button number"><button class="module-button" onclick="clickNumberButton(3)">3</button></div>
-
-                  <div class="decimal button number"><button class="module-button" onclick="clickNumberButton('.')">.</button></div>
-                  <div class="zero button number"><button class="module-button" onclick="clickNumberButton(0)">0</button></div>
-                  <div class="equal button number"><button class="module-button" onclick="equate()">=</button></div>
                 </div>
               </div>
               <p class="mb-3">I wrote this calculator with pure javascript, HTML, and CSS. It is mobile friendly. I made sure that the digits overflowing the display are not cut mid-character, but instead are cut in-between characters. I did so by determining the width of the display, the width of the characters, and then limiting the number of characters displayed. I'm especially proud of this feature.

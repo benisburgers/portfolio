@@ -1,6 +1,4 @@
-
-
-  .wrapper {
+  .calculator .wrapper {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-auto-rows: 16vh;
@@ -8,12 +6,12 @@
     height: 100%;
   }
 
-  .container {
+  .calculator .container {
     width: 100%;
     margin: auto;
   }
 
-  .outerDiv {
+  .calculator .outerDiv {
     padding-right: 10px;
     grid-column-start: 1;
     grid-column-end: 13;
@@ -26,16 +24,16 @@
     background-color: #FE4A49;
   }
 
-  .innerDiv {
+  .calculator .innerDiv {
     float:right;
   }
 
-  .displayText {
+  .calculator .displayText {
     font-size: 10vh;
     color: #F4F4F8;
     }
 
-  .cancel {
+  .calculator .cancel {
     grid-column-start: 1;
     grid-column-end: 7;
     grid-row-start: 2;
@@ -45,126 +43,126 @@
     align-items: center;
   }
 
-  .del {
+  .calculator .del {
     grid-column-start: 7;
     grid-column-end: 10;
     grid-row-start: 2;
     grid-row-end: 3;
   }
 
-  .divide {
+  .calculator .divide {
     grid-column-start: 10;
     grid-column-end: 13;
     grid-row-start: 2;
     grid-row-end: 3;
   }
 
-  .multiply {
+  .calculator .multiply {
     grid-column-start: 10;
     grid-column-end: 13;
     grid-row-start: 3;
     grid-row-end: 4;
   }
 
-  .minus {
+  .calculator .minus {
     grid-column-start: 10;
     grid-column-end: 13;
     grid-row-start: 4;
     grid-row-end: 5;
   }
 
-  .plus {
+  .calculator .plus {
     grid-column-start: 10;
     grid-column-end: 13;
     grid-row-start: 5;
     grid-row-end: 7;
   }
 
-  .seven {
+  .calculator .seven {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
     grid-row-end: 4;
   }
 
-  .eight {
+  .calculator .eight {
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 3;
     grid-row-end: 4;
   }
 
-  .nine {
+  .calculator .nine {
     grid-column-start: 7;
     grid-column-end: 10;
     grid-row-start: 3;
     grid-row-end: 4;
   }
 
-  .four {
+  .calculator .four {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 4;
     grid-row-end: 5;
   }
 
-  .five {
+  .calculator .five {
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 4;
     grid-row-end: 5;
   }
 
-  .six {
+  .calculator .six {
     grid-column-start: 7;
     grid-column-end: 10;
     grid-row-start: 4;
     grid-row-end: 5;
   }
 
-  .one {
+  .calculator .one {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 5;
     grid-row-end: 6;
   }
 
-  .two {
+  .calculator .two {
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 5;
     grid-row-end: 6;
   }
 
-  .three {
+  .calculator .three {
     grid-column-start: 7;
     grid-column-end: 10;
     grid-row-start: 5;
     grid-row-end: 6;
   }
 
-  .decimal {
+  .calculator .decimal {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 6;
     grid-row-end: 7;
   }
 
-  .zero {
+  .calculator .zero {
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 6;
     grid-row-end: 7;
   }
 
-  .equal {
+  .calculator .equal {
     grid-column-start: 7;
     grid-column-end: 10;
     grid-row-start: 6;
     grid-row-end: 7;
   }
 
-  .button {
+  .calculator .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,19 +170,19 @@
     font-size: 6vh;
   }
 
-  .special {
+  .calculator .special {
     background-color: #FED766;
   }
 
-  .operation {
+  .calculator .operation {
     background-color: #E6E6EA;
   }
 
-  .number {
+  .calculator .number {
     background-color: #009FB7;
   }
 
-  .module-button {
+  .calculator .module-button {
     background-color: inherit;
     font: inherit;
     border: none;
@@ -192,13 +190,13 @@
     height: 100%;
   }
 
-  .module-button:focus {outline:0;}
+  .calculator .module-button:focus {outline:0;}
 
-  .module-button:hover {
-    filter:brightness(1.5);
+  .calculator .module-button:hover {
+    filter:brightness(1.calculator .5);
   }
 
-  .module-button:active {
+  .calculator .module-button:active {
     filter:brightness(1);
   }
 
@@ -208,14 +206,14 @@
 
   /* Small devices (landscape phones) */
   @media only screen and (min-width: 576px) {
-    .displayText {
+    .calculator .displayText {
       font-size: 12vh;
     }
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    .container {
+    .calculator .container {
       max-width: 768px;
     }
   }

@@ -208,6 +208,10 @@ header.masthead h2 {
   margin-bottom: -15px;
 }
 
+.portfolio .img-fluid {
+  border: 1px solid black;
+}
+
 .portfolio .portfolio-item {
   position: relative;
   display: block;

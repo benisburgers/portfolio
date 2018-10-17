@@ -27,6 +27,9 @@
     <!-- Portfolio calculator CSS -->
     <link href="css/calculator.css" rel="stylesheet">
 
+    <!-- Portfolio etch-a-sketch CSS -->
+    <link href="css/etch-a-sketch.css" rel="stylesheet">
+
   </head>
 
   <body id="page-top">
@@ -293,8 +296,8 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Jomi Website</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/jomi.png" alt="">
-              <p class="mb-5">This website is the first freelance project I have completed. I used bootstrap to create a mobile-friendly and reactive website. I opted for a single webpage in order to keep the website simple. Working with a client was an interesting and valuable challenge that taught me a lot about webdesign.<br><br><a href="https://yx2xy.com/jomi/index.html" target="_blank">Check it out.</a></p>
+              <img class="img-fluid mb-3" src="img/portfolio/jomi.png" alt="">
+              <p class="mb-3">This website is the first freelance project I have completed. I used bootstrap to create a mobile-friendly and reactive website. I opted for a single webpage in order to keep the website simple. Working with a client was an interesting and valuable challenge that taught me a lot about webdesign.<br><br><a href="https://yx2xy.com/jomi/index.html" target="_blank">Check it out.</a></p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a>
@@ -315,8 +318,17 @@
             <div class="col-lg-8 mx-auto">
               <h2 class="text-secondary text-uppercase mb-0">Etch-a-sketch</h2>
               <hr class="star-dark mb-5">
-              <img class="img-fluid mb-5" src="img/portfolio/etch-a-sketch.png" alt="">
-              <p class="mb-5">I wrote this etch-a-sketch program purely with CSS, Javascript, and HTML. Creating a grid with a dynamic number of rows and columns was difficult to achieve purely with Javascript. However, I succeeded. Additionaly, you will notice that the brightness of the individual boxes decreases as you re-enter a box, until it's completely dark. I achieved this effect by using HCS/HCL instead of RGB.<br><br><a href="https://benisburgers.github.io/etch-a-sketch/" target="_blank">Check it out.</a></p>
+              <div class="etch-a-sketch mb-3">
+                <div id="outer">
+                  <div id="inner">
+                    <h1>Etch-a-sketch</h1>
+                    <button id="start">Create new grid</button>
+                    <div id="container"></div>
+                  </div>
+                </div>
+              </div>
+
+              <p class="mb-3">I wrote this etch-a-sketch program purely with CSS, Javascript, and HTML. Creating a grid with a dynamic number of rows and columns was difficult to achieve purely with Javascript. However, I succeeded. Additionaly, you will notice that the brightness of the individual boxes decreases as you re-enter a box, until it's completely dark. I achieved this effect by using HCS/HCL instead of RGB. <strong> Please be aware that this game is not mobile-friendly. </strong> <br><br><a href="https://benisburgers.github.io/etch-a-sketch/" target="_blank">Check it out.</a></p>
               <a class="btn btn-primary btn-lg rounded-pill portfolio-modal-dismiss" href="#">
                 <i class="fa fa-close"></i>
                 Close Project</a>
@@ -344,6 +356,9 @@
 
     <!-- Script for calculator plug in -->
     <script src="js/calculator.js"></script>
+
+    <!--Script for etch-a-sketch plug in -->
+    <script src="js/etch-a-sketch.js"></script>
 
   </body>
 
